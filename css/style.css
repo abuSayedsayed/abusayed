@@ -7,7 +7,6 @@ body {
 	font-family: 'Poppins', sans-serif;
 	background-color: #333647;
 	overflow-x: hidden;
-	
 }
 a {
 	text-decoration: none;
@@ -645,6 +644,7 @@ section {
 		width: 0%;
 	}
 }
+
 @media screen and (min-width: 768px) {
 	.container {
 		max-width: 720px;
@@ -680,11 +680,30 @@ section {
 	.skill-bottom > p {
 		padding-top: 2rem;
 	}
+	.form-container {
+		flex-direction: column-reverse;
+	}
+	.form-right {
+		margin-bottom: 3rem;
+	}
+
+	.about-left {
+		text-align: center;
+	}
+	.about-left > img {
+		margin: auto;
+	}
 }
+
 
 @media screen and (min-width: 992px) {
 	.container {
 		max-width: 960px;
+	}
+}
+@media screen and (max-width: 1024px) {
+	.project-container {
+		grid-template-columns: repeat(2, 48%);
 	}
 }
 @media screen and (max-width: 992px) {
@@ -710,7 +729,7 @@ section {
 		justify-content: center;
 	}
 	.services-container {
-		grid-template-columns: repeat(2, 45%);
+		grid-template-columns: repeat(2, 48%);
 		grid-gap: 3%;
 	}
 	.skill-container {
@@ -732,6 +751,13 @@ section {
 	.skill-bottom > p {
 		text-align: left;
 	}
+}
+@media screen and (max-width: 425px) {
+	.services-container{
+		grid-template-columns: 98%;
+		margin: auto;
+	}
+	
 }
 @media screen and (max-width: 1199px) {
 	.name {
