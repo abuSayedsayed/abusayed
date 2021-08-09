@@ -358,21 +358,27 @@
 				</div>
 				<div class="form-container">
 					<div class="form-left">
-						<form action="" id="form">
+						<form action="#" method="POST" id="form">
 							<input
 								type="text"
 								placeholder="Input Your Name"
 								class="input form-name"
+								name="name"
+								required
 							/>
 							<input
 								type="email"
 								placeholder="Input Your Email"
 								class="input form-email"
+								name="email"
+								required
 							/>
 							<input
 								type="text"
 								placeholder="Subject"
 								class="input form-subject"
+								name="subject"
+								required
 							/>
 							<textarea
 								name="description"
@@ -381,6 +387,7 @@
 								rows="7"
 								placeholder="Input Your Description"
 								class="input form-text-area"
+								required
 							></textarea>
 							<button id="submit-btn" class="form-submit-btn" type="submit">
 								Submit
@@ -440,9 +447,12 @@
 		<footer id="footer">
 			<p>All rights reserved &copy; <a href="#">Abu Sayed</a></p>
 		</footer>
-
+		<!-- Loading Smtp js  -->
+		<script src="https://smtpjs.com/v3/smtp.js"></script>
 		<div id="particles-js" class="particle-js"></div>
 		<script src="./js/particles.min.js"></script>
+		<script src="./js/validator.js"></script>
+		<script src="./js/smtp.js"></script>
 		<script src="./js/main.js"></script>
-	</body>
+		required
 </html>
