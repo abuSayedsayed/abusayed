@@ -20,21 +20,33 @@ form.addEventListener('submit', function (event) {
 	}
 	console.log(isEmailValid)
 })
-
+//  0e954bf3-495b-4c31-aec7-e157495d63e7
 function sendMail(mailData) {
+	// Email.send({
+	// 	Host: 'smtp.gmail.com',
+	// 	Username: 'mdsaied386@gmail.com',
+	// 	Password: 'Janums$@$',
+	// 	To: 'mdsaied386@gmail.com',
+	// 	From: 'mdsaied386@gmail.com',
+	// 	Subject: `${mailData.name} Send You A Message`,
+	// 	Body: `
+	//     <h3>${mailData.name} Wanted To Tell You About ....</h3> <br><br>
+	//     <h5>${mailData.subject} On The Subject</h5> br><br>
+	//     <p> Message : ${mailData.description} </p>
+
+	//     `,
+	// }).then((message) => alert(message))
 	Email.send({
-		Host: 'smtp.gmail.com',
-		Username: 'Sayed123dev',
-		Password: 'hellodev1234',
+		SecureToken: 'bcf2f4fe-7102-4eef-b8ec-76865174580f',
 		To: 'mdsaied386@gmail.com',
 		From: 'mdsaied386@gmail.com',
-		Subject: `${mailData.name} Send You A Message`,
-		Body: `
-        <h3>${mailData.name} Wanted To Tell You About ....</h3> <br><br>
-        <h5>${mailData.subject} On The Subject</h5> br><br>
-        <p> Message : ${mailData.description} </p>
-         
-        
-        `,
+		// Subject: `${mailData.name} Send You A Message`,
+		// Body: `
+		// <h3>${mailData.name} Wanted To Tell You About ....</h3> <br><br>
+		// <h5>${mailData.subject} On The Subject</h5> br><br>
+		// <p> Message : ${mailData.description} </p>
+		// `,
+		Subject: 'hello',
+		Body: 'Hello Putki',
 	}).then((message) => alert(message))
 }
