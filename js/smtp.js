@@ -48,7 +48,14 @@ function sendMail(mailData) {
 		// `,
 		Subject: 'hello',
 		Body: 'Hello Putki',
-	}).then((message) => alert(message))
+	})
+		.then((message) => {
+			form.reset()
+			alert(message)
+		})
+		.catch((err) => {
+			alert(err)
+		})
 }
 
 console.log(validate)

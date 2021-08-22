@@ -11,6 +11,8 @@ window.onload = function () {
 	stickNav()
 	// This function will expand the skill level
 	expandSkill()
+	// Making the call
+	makeCall()
 }
 
 function expandNav() {
@@ -132,4 +134,12 @@ function expandSkill() {
 			})(i)
 		}
 	}
+}
+
+function makeCall() {
+	const phoneNbr = document.getElementById('phone-nbr')
+	phoneNbr.addEventListener('click', function (event) {
+		event.preventDefault()
+		window.open(`tel://+8801784069416`, '_blank', true)
+	})
 }
