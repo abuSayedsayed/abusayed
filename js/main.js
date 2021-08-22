@@ -140,6 +140,6 @@ function makeCall() {
 	const phoneNbr = document.getElementById('phone-nbr')
 	phoneNbr.addEventListener('click', function (event) {
 		event.preventDefault()
-		window.open(`tel://+8801784069416`, '_blank', true)
+		window.open(`tel://+8801773678642`, '_blank', true)
 	})
 }
