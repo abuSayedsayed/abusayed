@@ -3,7 +3,7 @@
 	padding: 0;
 	box-sizing: border-box;
 }
-html{
+html {
 	scroll-behavior: smooth;
 }
 body {
@@ -642,11 +642,6 @@ section {
 		max-width: 540px;
 	}
 }
-@media screen and (max-width: 576px) {
-	.navmenu {
-		width: 0%;
-	}
-}
 
 @media screen and (min-width: 768px) {
 	.container {
@@ -698,7 +693,6 @@ section {
 	}
 }
 
-
 @media screen and (min-width: 992px) {
 	.container {
 		max-width: 960px;
@@ -707,6 +701,9 @@ section {
 @media screen and (max-width: 1024px) {
 	.project-container {
 		grid-template-columns: repeat(2, 48%);
+	}
+	.hero-right > img {
+		width: 110%;
 	}
 }
 @media screen and (max-width: 992px) {
@@ -756,11 +753,10 @@ section {
 	}
 }
 @media screen and (max-width: 425px) {
-	.services-container{
+	.services-container {
 		grid-template-columns: 98%;
 		margin: auto;
 	}
-	
 }
 @media screen and (max-width: 1199px) {
 	.name {
@@ -780,5 +776,40 @@ section {
 @media screen and (min-width: 1200px) {
 	.container {
 		max-width: 1140px;
+	}
+}
+
+@media screen and (max-width: 576px) {
+	.navmenu {
+		width: 0%;
+	}
+	.project-container {
+		grid-template-columns: repeat(1, 90%);
+		place-items: center;
+		justify-items: center;
+	}
+	.input {
+		padding: 0.7rem 1rem;
+		width: 95%;
+		margin: 0.5rem auto;
+	}
+	#skills {
+		margin-top: 20rem;
+	}
+	.skill-bottom {
+		padding: 2rem 0rem;
+	}
+	.skill-description {
+		padding: 2rem 0rem;
+	}
+
+	.buttons {
+		flex-direction: column;
+	}
+	.hire-me-btn {
+		margin-bottom: 1rem;
+		font-weight: 600;
+		padding: 0.5rem 2rem;
+		width: 60%;
 	}
 }

@@ -83,7 +83,7 @@ function typeWriterEffect() {
 				typeSpeed = 20
 			}
 			// change the is deleting state for deleting the text
-			if (!this. isDeleting&& this.text === fullText) {
+			if (!this.isDeleting && this.text === fullText) {
 				typeSpeed = this.wait
 				this.isDeleting = true
 			} else if (this.isDeleting && this.text === '') {

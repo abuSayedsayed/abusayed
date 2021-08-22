@@ -50,3 +50,6 @@ function sendMail(mailData) {
 		Body: 'Hello Putki',
 	}).then((message) => alert(message))
 }
+
+console.log(validate)
+console.log(form)
